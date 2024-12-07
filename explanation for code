@@ -1,0 +1,8 @@
+1.The potentiometer is hooked up to the analog pin A0, and the program keeps checking its value, which can go from 0 to 1023. This value shows where the potentiometer is positioned.
+
+2.The value obtained from the potentiometer is adjusted with the map() function to fit within a range of 0 to 180. This range represents the rotation degrees for the servo motor.
+
+3.The adjusted value is transmitted to the servo motor linked to pin 9 through the print() function, which changes the servo's position to align with the mapped value.
+
+4.The program checks the current position of the servo by using the read() function and shows this information, along with the analog value from the potentiometer, on the Serial Monitor so you can see the updates in real-time.
+
